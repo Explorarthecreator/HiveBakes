@@ -41,11 +41,8 @@ const ContactDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button
-          variant={"outline"}
-          className="border-[#898F67] px-8 py-4 h-14 text-[#898F67] hover:bg-[#898F67] cursor-pointer hover:text-white"
-        >
-          Order
+        <Button className="bg-[#898F67] px-8 py-4 h-14 border-[#898F67] border cursor-pointer hover:border-[#898F67] hover:bg-transparent hover:text-[#898F67] hover:border ">
+          Contact Us
         </Button>
       </DialogTrigger>
       <DialogContent

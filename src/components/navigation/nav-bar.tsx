@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { quickSand } from "@/app/fonts";
 import Image from "next/image";
-import { Hamburger } from "lucide-react";
 import ContactDialog from "../dialogs/contact-dialog";
 import MobileMenu from "./mobile-menu";
+import OrderDialog from "../dialogs/order-dialog";
 
 const Navbar = () => {
   return (
@@ -22,7 +21,7 @@ const Navbar = () => {
           />
           <h3 className="text-lg lg:text-2xl font-bold">Hive Bakes</h3>
         </Link>
-        {/* <Hamburger color="#000" className="lg:hidden" /> */}
+
         <MobileMenu />
         <div className="hidden lg:flex items-center gap-20">
           <div className="font-bold space-x-4">
@@ -31,10 +30,8 @@ const Navbar = () => {
             <Link href={"#"}>Price List</Link>
           </div>
           <div className="space-x-3">
+            <OrderDialog />
             <ContactDialog />
-            <Button className="bg-[#898F67] px-8 py-4 h-14 border-[#898F67] border cursor-pointer hover:border-[#898F67] hover:bg-transparent hover:text-[#898F67] hover:border ">
-              Contact Us
-            </Button>
           </div>
         </div>
       </div>
