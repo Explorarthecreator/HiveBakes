@@ -44,8 +44,8 @@ const OrderDialog = () => {
     },
   });
 
-  async function submit(values: z.infer<typeof orderFormSchema>) {
-    console.log(values);
+  async function submit() {
+    setTab("done");
   }
   return (
     <Dialog>

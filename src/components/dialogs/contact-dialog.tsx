@@ -35,7 +35,7 @@ const ContactDialog = () => {
     },
   });
 
-  async function submit(values: z.infer<typeof contactFormSchema>) {
+  async function submit() {
     setTab("done");
   }
   return (
