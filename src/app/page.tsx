@@ -7,7 +7,7 @@ export default function Home() {
     <div className="">
       <Main />
       <Story />
-      <div className="h-72">Break</div>
+      {/* <div className="h-72">Break</div> */}
       <PriceList />
     </div>
   );

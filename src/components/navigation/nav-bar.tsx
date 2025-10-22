@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { quickSand } from "@/app/fonts";
 import Image from "next/image";
 import { Hamburger } from "lucide-react";
+import ContactDialog from "../dialogs/contact-dialog";
 
 const Navbar = () => {
   return (
@@ -28,12 +29,7 @@ const Navbar = () => {
             <Link href={"#"}>Price List</Link>
           </div>
           <div className="space-x-3">
-            <Button
-              variant={"outline"}
-              className="border-[#898F67] px-8 py-4 h-14 text-[#898F67] hover:bg-[#898F67] cursor-pointer hover:text-white"
-            >
-              Order
-            </Button>
+            <ContactDialog />
             <Button className="bg-[#898F67] px-8 py-4 h-14 border-[#898F67] border cursor-pointer hover:border-[#898F67] hover:bg-transparent hover:text-[#898F67] hover:border ">
               Contact Us
             </Button>
