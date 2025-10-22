@@ -57,7 +57,7 @@ const PriceList = () => {
     },
   ];
   return (
-    <div className=" py-10 px-6 md:px-10 xl:px-0  bg-white">
+    <div className=" py-10 lg:py-20 px-6 md:px-10 xl:px-0  bg-white">
       <div className="max-w-[1305px] m-auto space-y-5">
         <div className="flex justify-center">
           <div className="bg-[#404A3D]  px-6 py-1 rounded-xl font-bold text-xs text-white">
@@ -115,7 +115,6 @@ const PriceList = () => {
                 </div>
               ))}
             </TabsContent>
-            {/* </div> */}
           </Tabs>
         </div>
       </div>
