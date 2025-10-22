@@ -4,6 +4,7 @@ import { quickSand } from "@/app/fonts";
 import Image from "next/image";
 import { Hamburger } from "lucide-react";
 import ContactDialog from "../dialogs/contact-dialog";
+import MobileMenu from "./mobile-menu";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,8 @@ const Navbar = () => {
           />
           <h3 className="text-lg lg:text-2xl font-bold">Hive Bakes</h3>
         </Link>
-        <Hamburger color="#000" className="lg:hidden" />
+        {/* <Hamburger color="#000" className="lg:hidden" /> */}
+        <MobileMenu />
         <div className="hidden lg:flex items-center gap-20">
           <div className="font-bold space-x-4">
             <Link href={"#"}>Our Story</Link>
