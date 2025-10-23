@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const Story = () => {
   return (
-    <section className={`bg-white py-10 lg:py-20 ${quickSand.className}`}>
+    <section
+      id="story"
+      className={`bg-white py-10 lg:py-20 ${quickSand.className}`}
+    >
       <div className="px-6 md:px-10 xl:px-0 max-w-[1305px] m-auto space-y-10">
         <h1
           className="underline text-[#F3A785] text-5xl md:text-[64px] font-bold text-center "
