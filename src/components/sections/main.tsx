@@ -6,7 +6,10 @@ import Link from "next/link";
 const Main = () => {
   return (
     <section className={`py-10 lg:py-20 ${quickSand.className} space-y-12`}>
-      <div className="px-6 md:px-10 xl:px-0 max-w-[1305px] m-auto flex flex-col items-center gap-5 text-center">
+      <div
+        className="px-6 md:px-10 xl:px-0 max-w-[1305px] m-auto flex flex-col items-center gap-5 text-center"
+        data-aos="zoom-in-down"
+      >
         <div className="bg-[#F3A785] border border-[#3D4451]/20 px-6 py-1 rounded-xl font-bold text-xs text-[#0D0C21]/80">
           Fresh. Warm. Unforgettable.
         </div>
@@ -22,7 +25,10 @@ const Main = () => {
         </p>
       </div>
       <div></div>
-      <div className=" text-center space-x-2 lg:space-x-4">
+      <div
+        className=" text-center space-x-2 lg:space-x-4"
+        data-aos="zoom-out-down"
+      >
         <Link
           href={"/gallery"}
           className={`py-4 px-7 lg:px-14 h-14 cursor-pointer ${buttonVariants()}`}
@@ -36,7 +42,7 @@ const Main = () => {
           Learn more
         </Button>
       </div>
-      <div>
+      <div data-aos="fade-left">
         <MainSlider />
       </div>
     </section>

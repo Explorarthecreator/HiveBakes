@@ -25,9 +25,9 @@ const Navbar = () => {
         <MobileMenu />
         <div className="hidden lg:flex items-center gap-20">
           <div className="font-bold space-x-4">
-            <Link href={"#"}>Our Story</Link>
-            <Link href={"#"}>Flavour List</Link>
-            <Link href={"#"}>Price List</Link>
+            <Link href={"/#story"}>Our Story</Link>
+            {/* <Link href={"#"}>Flavour List</Link> */}
+            <Link href={"/#price"}>Price List</Link>
           </div>
           <div className="space-x-3">
             <OrderDialog />
