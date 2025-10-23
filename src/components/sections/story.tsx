@@ -1,5 +1,5 @@
 import { quickSand } from "@/app/fonts";
-import { Lightbulb, Stars } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 import Image from "next/image";
 
 const Story = () => {
