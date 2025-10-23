@@ -1,6 +1,7 @@
 import { quickSand } from "@/app/fonts";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import MainSlider from "./main-slider";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -22,9 +23,12 @@ const Main = () => {
       </div>
       <div></div>
       <div className=" text-center space-x-2 lg:space-x-4">
-        <Button className="py-4 px-7 lg:px-14 h-14 cursor-pointer">
+        <Link
+          href={"/gallery"}
+          className={`py-4 px-7 lg:px-14 h-14 cursor-pointer ${buttonVariants()}`}
+        >
           Our Gallery
-        </Button>
+        </Link>
         <Button
           className="py-4 px-7 lg:px-14 h-14 border-black cursor-pointer"
           variant={"outline"}
