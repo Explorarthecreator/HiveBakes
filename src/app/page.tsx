@@ -1,21 +1,14 @@
-import Image from "next/image";
-import { quickSand } from "./fonts";
+import Main from "@/components/sections/main";
+import PriceList from "@/components/sections/price-list";
+import Story from "@/components/sections/story";
 
 export default function Home() {
   return (
-    <div className="h-screen flex items-center justify-center">
-      <Image
-        src={"/logo.svg"}
-        alt="logo"
-        width={1000}
-        height={1000}
-        className="h-20 w-20"
-      />
-      <h1
-        className={`${quickSand.className} text-3xl font-bold  animate-bounce`}
-      >
-        Work in progress
-      </h1>
+    <div className="">
+      <Main />
+      <Story />
+      {/* <div className="h-72">Break</div> */}
+      <PriceList />
     </div>
   );
 }

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { quickSand } from "./fonts";
+import Navbar from "@/components/navigation/nav-bar";
+import Footer from "@/components/navigation/footer";
 
 export const metadata: Metadata = {
   title: "Hives Bakes",
@@ -16,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>{children}</body>
+      <body
+        className={` ${quickSand.className} antialiased overflow-y-auto overflow-x-clip bg-[#FBFFF8]`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
