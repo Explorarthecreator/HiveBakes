@@ -12,13 +12,17 @@ const Story = () => {
         <h1
           className="underline text-[#F3A785] text-5xl md:text-[64px] font-bold text-center "
           style={{ textDecorationStyle: "wavy" }}
+          data-aos="fade-up"
         >
           <span className="text-black">Our Story</span>
         </h1>
 
         <div className="lg:space-y-32 md:space-y-16 space-y-10">
           <div className=" grid lg:grid-cols-3 gap-32 ">
-            <div className="lg:col-span-2 flex flex-col justify-center gap-5">
+            <div
+              className="lg:col-span-2 flex flex-col justify-center gap-5"
+              data-aos="fade-right"
+            >
               <div className="flex items-center gap-4">
                 <div className="bg-white w-14 h-14 md:w-[72px] md:h-[72px] rounded-xl md:rounded-2xl shadow-xl lg:shadow-2xl flex items-center justify-center">
                   <Lightbulb color="#000" className="w-8 h-8 md:w-12 md:h-12" />
@@ -34,7 +38,7 @@ const Story = () => {
                 and cupcakes, macarons, and allergen-free baking.
               </p>
             </div>
-            <div className=" hidden lg:block">
+            <div className=" hidden lg:block" data-aos="fade-left">
               <div className=" bg-white rounded-xl ">
                 <Image
                   src={"/assets/light2.jpg"}
@@ -47,7 +51,7 @@ const Story = () => {
             </div>
           </div>
           <div className=" grid lg:grid-cols-3 gap-32 ">
-            <div className="hidden lg:block">
+            <div className="hidden lg:block" data-aos="fade-right">
               <div className=" bg-white rounded-xl">
                 <Image
                   src={"/assets/history.jpg"}
@@ -58,7 +62,10 @@ const Story = () => {
                 />
               </div>
             </div>
-            <div className="lg:col-span-2 flex flex-col justify-center gap-5">
+            <div
+              className="lg:col-span-2 flex flex-col justify-center gap-5"
+              data-aos="fade-left"
+            >
               <div className="flex items-center gap-4">
                 <div className="bg-white w-14 h-14 md:w-[72px] md:h-[72px] rounded-xl md:rounded-2xl shadow-xl lg:shadow-2xl flex items-center justify-center">
                   <Image

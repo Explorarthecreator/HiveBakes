@@ -63,18 +63,27 @@ const PriceList = () => {
     >
       <div className="max-w-[1305px] m-auto space-y-5">
         <div className="flex justify-center">
-          <div className="bg-[#404A3D]  px-6 py-1 rounded-xl font-bold text-xs text-white">
+          <div
+            className="bg-[#404A3D]  px-6 py-1 rounded-xl font-bold text-xs text-white"
+            data-aos="fade-down-right"
+          >
             Price Tags
           </div>
         </div>
 
-        <h1 className="font-medium text-[55px] text-[#404A3D] text-center">
+        <h1
+          className="font-medium text-[55px] text-[#404A3D] text-center"
+          data-aos="fade-down-left"
+        >
           Price List
         </h1>
 
         <div>
           <Tabs defaultValue="account" className="">
-            <TabsList className="w-full bg-transparent h-auto justify-between">
+            <TabsList
+              className="w-full bg-transparent h-auto justify-between"
+              data-aos="fade-down"
+            >
               <TabsTrigger value="account" className="py-4 md:py-8 ">
                 Account
               </TabsTrigger>
@@ -84,6 +93,7 @@ const PriceList = () => {
             </TabsList>
             <TabsContent
               value="account"
+              data-aos="fade-up"
               className="bg-white rounded-2xl border-[3px] border-[#404A3D] p-7 md:p-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12.5"
             >
               {cakes.map((cake, index) => (
@@ -101,6 +111,7 @@ const PriceList = () => {
               ))}
             </TabsContent>
             <TabsContent
+              data-aos="fade-up"
               value="password"
               className="bg-white rounded-2xl border-[3px] border-[#404A3D] p-7 md:p-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-11.5 xl:gap-12.5"
             >

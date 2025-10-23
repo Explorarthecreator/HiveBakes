@@ -3,6 +3,7 @@ import "./globals.css";
 import { quickSand } from "./fonts";
 import Navbar from "@/components/navigation/nav-bar";
 import Footer from "@/components/navigation/footer";
+import AOSInitializer from "./aos-initializer";
 
 export const metadata: Metadata = {
   title: "Hives Bakes",
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={` ${quickSand.className} antialiased overflow-y-auto overflow-x-clip bg-[#FBFFF8]`}
       >
         <Navbar />
+        <AOSInitializer />
         {children}
         <Footer />
       </body>
