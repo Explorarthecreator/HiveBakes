@@ -61,7 +61,7 @@ const Footer = () => {
               </Link>
               <Link href={"#"}>
                 <Image
-                  src={"/assets/Linkedin.svg"}
+                  src={"/assets/Linkedln.svg"}
                   alt="facebook icon"
                   width={200}
                   height={200}

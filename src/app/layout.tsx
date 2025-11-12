@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${quickSand.className} antialiased overflow-y-auto overflow-x-clip bg-[#FBFFF8]`}
+        className={` ${quickSand.className} antialiased overflow-y-auto overflow-x-hidden! bg-[#FBFFF8]`}
       >
         <Navbar />
         <AOSInitializer />
