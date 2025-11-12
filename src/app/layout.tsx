@@ -4,6 +4,7 @@ import { quickSand } from "./fonts";
 import Navbar from "@/components/navigation/nav-bar";
 import Footer from "@/components/navigation/footer";
 import AOSInitializer from "./aos-initializer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Hives Bakes",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <AOSInitializer />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
