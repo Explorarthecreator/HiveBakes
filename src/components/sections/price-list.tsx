@@ -79,20 +79,20 @@ const PriceList = () => {
         </h1>
 
         <div>
-          <Tabs defaultValue="account" className="">
+          <Tabs defaultValue="cakes" className="">
             <TabsList
               className="w-full bg-transparent h-auto justify-between"
               data-aos="fade-down"
             >
-              <TabsTrigger value="account" className="py-4 md:py-8 ">
-                Account
+              <TabsTrigger value="cakes" className="py-4 md:py-8 ">
+                Cake
               </TabsTrigger>
-              <TabsTrigger value="password" className="py-4 md:py-8 ">
-                Password
+              <TabsTrigger value="cupcakes" className="py-4 md:py-8 ">
+                Cupcakes
               </TabsTrigger>
             </TabsList>
             <TabsContent
-              value="account"
+              value="cakes"
               data-aos="fade-up"
               className="bg-white rounded-2xl border-[3px] border-[#404A3D] p-7 md:p-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12.5"
             >
@@ -112,7 +112,7 @@ const PriceList = () => {
             </TabsContent>
             <TabsContent
               data-aos="fade-up"
-              value="password"
+              value="cupcakes"
               className="bg-white rounded-2xl border-[3px] border-[#404A3D] p-7 md:p-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-11.5 xl:gap-12.5"
             >
               {cupcakes.map((cupcake, index) => (
